@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import * as routes from '../../Constants/routes';
 
+import { navList } from '../../shared/SideBarInfo';
+
 interface ActiveSideNavBarElement {
     ElementId: number
 }
@@ -12,23 +14,7 @@ interface IState {
     isVisible: boolean
 }
 
-const navList = [
-    {
-        title: "Title",
-        image: "fa fa-facebook",
-        link: ""
-    },
-    {
-        title: "Title",
-        image: "fa fa-facebook",
-        link: ""
-    },
-    {
-        title: "Title",
-        image: "fa fa-facebook",
-        link: ""
-    }
-];
+
 
 export default class SideNavBar extends Component {
 

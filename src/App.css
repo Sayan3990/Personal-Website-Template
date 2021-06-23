@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
-  --header-height: 3rem;
-  --nav-width: 70px;
+  --nav-width: 16rem;
   --first-color: #4723D9;
   --first-color-light: #250994;
   --white-color: #F7F6FB;
@@ -37,7 +36,7 @@ body {
     width: var(--nav-width);
     height: 100vh;
     background-color: var(--first-color);
-    padding: .5rem 1rem 0 0;
+    padding: .3rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed)
 }
@@ -47,13 +46,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .nav_link {
     color: white;
     align-items: center;
-    padding: .5rem auto;
+    padding: .5rem;
 }
 
 .nav_logo {
@@ -70,11 +69,16 @@ body {
     font-weight: 700
 }
 
+.nav_list {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav_link {
     position: relative;
     color: var(--first-color-light);
-    margin-bottom: 1.5rem;
-    transition: .3s
+    margin-bottom: 1rem;
+    transition: .3s;
 }
 
 .nav_link:hover {
