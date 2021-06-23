@@ -1,0 +1,11 @@
+export const LANDING = "/";
+export const PERSONAL_INFO = "/personal";
+export const ACADEMICS = "/academics";
+export const TECH = "/tech";
+export const ACHIEVEMENTS = "/achievements";
+export const EXPERIENCES = "/experiences";
+export const GITHUB = "/github";
+export const CP = "/competitive-programming";
+export const AI = "/artificial-intelligence";
+export const SOCIAL_MEDIA = "/social-media";
+export const HOBBIES = "/hobbies";
