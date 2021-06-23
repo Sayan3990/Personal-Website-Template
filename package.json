@@ -15,6 +15,7 @@
     "firebase": "^8.6.8",
     "mdbreact": "^5.0.2",
     "react": "^17.0.2",
+    "react-bootstrap-sidebar": "0.0.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.4",
