@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import * as routes from '../../Constants/routes';
 
 import { navList } from '../../shared/SideBarInfo';
+import * as Icon from 'react-bootstrap-icons';
+
+const iconStyle = { color: "white", height: "20px" };
 
 interface ActiveSideNavBarElement {
     ElementId: number
@@ -15,6 +18,34 @@ interface IState {
 }
 
 
+function getIcon(id: number) {
+    switch(id){
+        case 1:
+            return <Icon.PersonFill style={iconStyle} />
+        case 2:
+            return <Icon.Book style={iconStyle} />
+        case 3:
+            return <Icon.Award style={iconStyle} />
+        case 4:
+            return <Icon.Alt style={iconStyle} />
+        case 5:
+            return <Icon.Alt style={iconStyle} />
+        case 6:
+            return <Icon.Github style={iconStyle} />
+        case 7:
+            return <Icon.Alt style={iconStyle} />
+        case 8:
+            return <Icon.Alt style={iconStyle} />
+        case 9:
+            return <Icon.Alt style={iconStyle} />
+        case 10:
+            return <Icon.Globe style={iconStyle} />
+        case 11:
+            return <Icon.Alt style={iconStyle} />
+        default:
+            return <Icon.Alt style={iconStyle} />
+    }
+}
 
 export default class SideNavBar extends Component {
 
@@ -24,7 +55,7 @@ export default class SideNavBar extends Component {
     }
 
     state: IState = {
-        isVisible: true
+        isVisible: false
     }
 
     handleSideNavBar() {
@@ -48,8 +79,9 @@ export default class SideNavBar extends Component {
                                         <Link to={navElement.link} className="nav_link" key={index}>
                                         {
                                             this.state.isVisible ? 
-                                            <span className="nav_name" style={{color: "white"}}>{navElement.title}</span>
-                                            :<i className={navElement.image}></i>
+                                            <span className="nav_name">
+                                                {navElement.title}</span>
+                                            : getIcon(navElement.image)
                                         }
                                         </Link>
                                     )                                  
@@ -57,10 +89,7 @@ export default class SideNavBar extends Component {
 
                             }         
                         </div>
-                    </div> 
-                    <a href="#" className="nav_link">
-                        <i className='bx bx-log-out nav_icon'></i> <span className="nav_name">SignOut</span>
-                    </a>
+                    </div>
                 </nav>
             </div>
         )

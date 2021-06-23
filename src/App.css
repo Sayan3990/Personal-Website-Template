@@ -35,8 +35,8 @@ body {
     left: 0;
     width: var(--nav-width);
     height: 100vh;
-    background-color: var(--first-color);
-    padding: .3rem 1rem 0 0;
+    background-image: linear-gradient( 45deg, var(--first-color), #6d1dab);
+    padding: .3rem 0 1rem;
     transition: .5s;
     z-index: var(--z-fixed)
 }
@@ -76,17 +76,20 @@ body {
 
 .nav_link {
     position: relative;
+    height: 2rem;
     color: var(--first-color-light);
-    margin-bottom: 1rem;
-    transition: .3s;
+    transition-delay: 0.5;
+    transition: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .nav_link:hover {
     color: var(--white-color)
 }
 
-.nav_icon {
-    font-size: 1.25rem
+.nav_name {
+    color: white;
 }
 
 .show {
