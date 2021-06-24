@@ -16,53 +16,47 @@ interface IState {
 }
 
 
-export default class SideNavBar extends Component {
+export default class UpperNavBar extends Component {
 
     constructor( props: ActiveSideNavBarElement ) {
         super(props);
-        this.handleSideNavBar = this.handleSideNavBar.bind(this);
+        this.handleUpperNavBar = this.handleUpperNavBar.bind(this);
     }
 
     state: IState = {
-        isVisible: true
+        isVisible: false
     }
 
-    handleSideNavBar() {
+    handleUpperNavBar() {
         this.setState({ isVisible: !this.state.isVisible })
     }
 
     public render() {
-        const width :string = this.state.isVisible? "17rem" : "3.7rem";
+        const height :string = this.state.isVisible? "auto" : "2.4rem";
         return (
-            <div className="l-navbar" style={{ width: width }}>
-                <nav className="nav">
+            <div className="u-navbar" style={{ height: height }}>
+                <nav className="u-nav">
                     <div>
-                        <div className="nav_logo" onClick={this.handleSideNavBar}> 
-                            {
-                                !this.state.isVisible ?
-                                <>
-                                    { getIcon(-1) }
-                                </>
-                                :<>
-                                    { getIcon(0) }
-                                </>
-                            }
-                            <span className="nav_logo-name">
+                        <div className="u-nav_logo" onClick={this.handleUpperNavBar}> 
+                            <div className="u-nav_logo-icon"> 
+                                { getIcon(-2) }
+                            </div>
+                            <span className="u-nav_logo-name">
                                     Sayan Bhattacharyya
                             </span>
                         </div>
                         <hr/>
-                        <div className="nav_list">
+                        <div className="u-nav_list">
                             {
                                 navList.map(( navElement, index ) => {
                                     return (
-                                        <Link to={navElement.link} className="nav_link" key={index}>
+                                        <Link to={navElement.link} className="u-nav_link" key={index}>
                                         {
                                             <>
                                                 {
                                                     getIcon( navElement.image )
                                                 }
-                                                <span className={ "nav_name" }>
+                                                <span className={ "u-nav_name" }>
                                                         {navElement.title}
                                                 </span>
                                             </>
