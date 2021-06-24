@@ -11,7 +11,6 @@
     "@types/react": "^17.0.11",
     "@types/react-bootstrap": "^0.32.25",
     "@types/react-dom": "^17.0.8",
-    "@types/react-router-dom": "^5.1.7",
     "css-doodle": "^0.19.1",
     "firebase": "^8.6.8",
     "mdbreact": "^5.0.2",
