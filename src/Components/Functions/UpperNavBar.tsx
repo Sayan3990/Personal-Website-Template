@@ -37,13 +37,13 @@ export default class UpperNavBar extends Component {
             <div className="u-navbar" style={{ height: height }}>
                 <nav className="u-nav">
                     <div>
-                        <div className="u-nav_logo" onClick={this.handleUpperNavBar}> 
-                            <div className="u-nav_logo-icon"> 
+                        <div className="u-nav_logo"> 
+                            <div className="u-nav_logo-icon" onClick={this.handleUpperNavBar}> 
                                 { getIcon(-2) }
                             </div>
-                            <span className="u-nav_logo-name">
+                            <Link to={routes.LANDING} className="u-nav_logo-name">
                                     Sayan Bhattacharyya
-                            </span>
+                            </Link>
                         </div>
                         <hr/>
                         <div className="u-nav_list">

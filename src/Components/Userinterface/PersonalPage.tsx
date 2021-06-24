@@ -9,7 +9,7 @@ interface IState {
     isVisible: boolean
 }
 
-export default class LandingPage extends Component {
+export default class PersonalPage extends Component {
  
     state: IState = {
         isVisible: false
@@ -20,7 +20,7 @@ export default class LandingPage extends Component {
                 <UpperNavBar />
                 <SideNavBar />
                 <Container>
-                    <h1>LANDING</h1>
+                    <h1>Personal Information</h1>
                 </Container>
             </>
         )

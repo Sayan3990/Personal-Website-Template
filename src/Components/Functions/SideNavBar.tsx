@@ -37,19 +37,21 @@ export default class SideNavBar extends Component {
             <div className="l-navbar" style={{ width: width }}>
                 <nav className="nav">
                     <div>
-                        <div className="nav_logo" onClick={this.handleSideNavBar}> 
-                            {
-                                !this.state.isVisible ?
-                                <>
-                                    { getIcon(-1) }
-                                </>
-                                :<>
-                                    { getIcon(0) }
-                                </>
-                            }
-                            <span className="nav_logo-name">
+                        <div className="nav_logo" > 
+                            <div className="nav_logo-icon" onClick={this.handleSideNavBar}>
+                                {
+                                    !this.state.isVisible ?
+                                    <>
+                                        { getIcon(-1) }
+                                    </>
+                                    :<>
+                                        { getIcon(0) }
+                                    </>
+                                }
+                            </div>
+                            <Link to={routes.LANDING} className="nav_logo-name">
                                     Sayan Bhattacharyya
-                            </span>
+                            </Link>
                         </div>
                         <hr/>
                         <div className="nav_list">

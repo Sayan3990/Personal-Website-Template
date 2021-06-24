@@ -24,7 +24,7 @@ export const navList = [
     {
         title: "Computer Science",
         image: 5,
-        link: routes.TECH
+        link: routes.CSE
     },
     {
         title: "Github",
@@ -59,6 +59,6 @@ export const navList = [
     {
         title: "Feedback",
         image: 12,
-        link: routes.HOBBIES
+        link: routes.FEEDBACK
     }
 ];

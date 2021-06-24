@@ -68,18 +68,6 @@ body {
     overflow: hidden;
     visibility: visible;
     opacity: 0.7;
-    animation: navLinkAni 0.7s ease-out 0s 1;
-}
-
-@keyframes navLinkAni {
-    0%, 40% {
-        height: 0rem;
-        opacity: 0;
-    }
-    100% {
-        height: 2.6rem;
-        opacity: 1;
-    }
 }
 
 .nav_link:hover {
@@ -102,13 +90,22 @@ body {
     color: #F7F6FB;
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
-.nav_logo-name {
+.nav_logo-icon {
+    transform: translateY(10%);
+}
+
+.nav_logo-name, .u-nav_logo-name {
     margin: auto;
     width: 16.5rem;
     padding-left: 0.5rem;
+    color: #F7F6FB;
     font-size: 1rem;
+    text-decoration: none;
+    text-align: left;
 }
 
 .u-navbar {
@@ -128,7 +125,7 @@ body {
     padding: 0.5rem 0.4rem;
     height: auto;
     width: 100%;
-    font-size: 0.93rem;
+    font-size: 0.95rem;
     opacity: 1;
     animation: none;
 }
@@ -136,8 +133,6 @@ body {
 .u-nav_logo {
     height: 1.7rem;
     width: 100%;
-    display: flex;
-    text-align: center;
 }
 
 .u-nav_logo-icon {
@@ -148,10 +143,19 @@ body {
 
 .u-nav_logo-name {
     width: 100%;
-    padding-left: auto;
+    margin: auto;
+    padding: auto;
+    padding-top: 0.15rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
+.container {
+    position: relative;
+    top: 0;
+    left: 3.7rem;
+    width: calc(100% - 3.7rem);
+}
 
 @media (max-width: 900px) {
     .l-navbar {
@@ -160,5 +164,9 @@ body {
     .u-navbar {
         position: fixed;
         top: 0;
+    }
+    .container {
+        top: 2.4rem;
+        left: 0;
     }
 }
