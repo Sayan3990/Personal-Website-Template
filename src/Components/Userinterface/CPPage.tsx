@@ -15,7 +15,7 @@ export default class CPPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Competitive Programming</h1>
+                    {/* <h1 id="main-banner-h1">Competitive Programming</h1> */}
                 </Container>
             </>
         )

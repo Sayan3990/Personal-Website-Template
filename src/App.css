@@ -79,12 +79,13 @@ body {
 
 .nav_link:hover {
     opacity: 1;
+    color: var(--white-color);
 }
 
 .nav_name, .u-nav_name {
     padding-left: 0.5rem;
     overflow: hidden;
-    color: white;
+    color: var(--white-color)
 }
 
 .nav_logo, .u-nav_logo {
@@ -166,52 +167,72 @@ body {
     opacity: 1;
 }
 
-.rendered-page-area {
+.rendered-page-area, .rendered-page-area-900 {
     position: relative;
+    z-index: 5;
+    visibility: visible;
     transition-duration: 0.5s;
     width: 100%;
 }
 
-.container {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: calc(100% - 3.7rem);
+.rendered-page-area-900 {
+    visibility: hidden;
 }
 
-#main-banner-h1 {
+.main-header-upper, .main-header-upper-900 {
     position: fixed;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    text-align: left;
-    color: #F7F6FB;
-    animation: main-banner-h1-ani 1s linear 0s 1;
-}
-
-@keyframes main-banner-h1-ani {
-    0%, 50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.main-header-upper {
-    height: 10px;
-    background-image:   linear-gradient( var(--first-color-dark),
-                        var(--first-color),
+    top: 0;
+    z-index: 5;
+    height: 0px;
+    width: 100%;
+    background-image:   linear-gradient( to bottom, var(--first-color-dark),
                         var(--first-color-light-2)
                     );
     transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
 
 .main-header-background {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 5;
     transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.main-header-background-900 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.main-header-upper-900 {
+    height: 100px;
+    color: var(--white-color);
+    background-image: none;
+    background-color: var(--first-color-light-2);
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 10rem 10%;
+    width: calc(100% - 3.7rem);
+    z-index: 2;
+}
+
+#main-banner-h1 {
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    text-align: left;
+    color: #F7F6FB;
+    visibility: visible;
 }
 
 @media (max-width: 900px) {
@@ -222,8 +243,15 @@ body {
         position: fixed;
         top: 0;
     }
-    .container {
-        top: 2.4rem;
-        left: 0;
+    .rendered-page-area {
+        top: -100%;
+        visibility: hidden;
+    }
+    #main-banner-h1 {
+        visibility: hidden;
+    }
+
+    .rendered-page-area-900 {
+        visibility: visible;
     }
 }

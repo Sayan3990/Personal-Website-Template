@@ -15,7 +15,7 @@ export default class GithubPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Github</h1>
+                    {/* <h1 id="main-banner-h1">Github</h1> */}
                 </Container>
             </>
         )

@@ -109,3 +109,10 @@ export function getSelectedPage(id: number) {
     }
 }
 
+export function getGreeting() {
+    const currHr = new Date().getHours();
+    if (currHr < 12 && currHr >= 4) return "Good Morning!";
+    else if (currHr >= 12 && currHr < 18) return "Good Afternoon!";
+    else if (currHr >= 18 && currHr <= 23) return "Good Evening!";
+    else return "Welcome!";
+}

@@ -15,7 +15,7 @@ export default class AIPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Artificial Intelligence</h1>
+                    {/* <h1 id="main-banner-h1">Artificial Intelligence</h1> */}
                 </Container>
             </>
         )

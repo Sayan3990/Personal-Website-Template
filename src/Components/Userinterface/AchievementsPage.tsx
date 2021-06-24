@@ -15,7 +15,7 @@ export default class AchievementsPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Achievements</h1>
+                    {/* <h1 id="main-banner-h1">Achievements</h1> */}
                 </Container>
             </>
         )

@@ -15,7 +15,7 @@ export default class HirePage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Hire me</h1>
+                    {/* <h1 id="main-banner-h1">Hire me</h1> */}
                 </Container>
             </>
         )

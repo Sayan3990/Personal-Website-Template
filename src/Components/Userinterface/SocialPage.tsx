@@ -15,7 +15,7 @@ export default class SocialPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Social Media</h1>
+                    {/* <h1 id="main-banner-h1">Social Media</h1> */}
                 </Container>
             </>
         )

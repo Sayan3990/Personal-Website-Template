@@ -15,7 +15,7 @@ export default class CSEPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Computer Science</h1>
+                    {/* <h1 id="main-banner-h1">Computer Science</h1> */}
                 </Container>
             </>
         )
