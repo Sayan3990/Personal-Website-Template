@@ -22,7 +22,7 @@ export const navList = [
         link: routes.EXPERIENCES
     },
     {
-        title: "Technology",
+        title: "Computer Science",
         image: 5,
         link: routes.TECH
     },
@@ -32,19 +32,19 @@ export const navList = [
         link: routes.GITHUB
     },
     {
-        title: "Competitive Programming",
+        title: "Web Development",
         image: 7,
+        link: routes.WEB_DEV
+    },
+    {
+        title: "Competitive Programming",
+        image: 8,
         link: routes.CP
     },
     {
         title: "Artificial Intelligence",
-        image: 8,
-        link: routes.AI
-    },
-    {
-        title: "Web Development",
         image: 9,
-        link: routes.WEB_DEV
+        link: routes.AI
     },
     {
         title: "Social Media",
@@ -54,6 +54,11 @@ export const navList = [
     {
         title: "Hobbies",
         image: 11,
+        link: routes.HOBBIES
+    },
+    {
+        title: "Feedback",
+        image: 12,
         link: routes.HOBBIES
     }
 ];

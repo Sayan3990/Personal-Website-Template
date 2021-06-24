@@ -7,7 +7,7 @@ import * as routes from '../../Constants/routes';
 import { navList } from '../../shared/SideBarInfo';
 import * as Icon from 'react-bootstrap-icons';
 
-const iconStyle = { color: "white", transform: "scale(160%)", margin: "auto 1rem auto 0.3rem" };
+const iconStyle = { color: "white", transform: "scale(150%) translateY(10%)", margin: "auto 1rem auto 0.3rem" };
 
 interface ActiveSideNavBarElement {
     ElementId: string
@@ -20,10 +20,14 @@ interface IState {
 
 function getIcon(id: number) {
     switch(id){
+        case -1:
+            return <Icon.LayoutSidebar style={iconStyle} />
+        case 0:
+            return <Icon.LayoutSidebarInset style={iconStyle} />
         case 1:
             return <Icon.PersonFill style={iconStyle} />
         case 2:
-            return <Icon.Book style={iconStyle} />
+            return <Icon.BookHalf style={iconStyle} />
         case 3:
             return <Icon.Award style={iconStyle} />
         case 4:
@@ -33,15 +37,17 @@ function getIcon(id: number) {
         case 6:
             return <Icon.Github style={iconStyle} />
         case 7:
-            return <Icon.Alt style={iconStyle} />
+            return <Icon.Globe2 style={iconStyle} />
         case 8:
-            return <Icon.Heart style={iconStyle} />
+            return <Icon.CodeSquare style={iconStyle} />
         case 9:
-            return <Icon.ArrowsExpand style={iconStyle} />
-        case 10:
-            return <Icon.Globe style={iconStyle} />
-        case 11:
             return <Icon.Alt style={iconStyle} />
+        case 10:
+            return <Icon.PeopleFill style={iconStyle} />
+        case 11:
+            return <Icon.Stars style={iconStyle} />
+        case 12:
+            return <Icon.ChatRightText style={iconStyle} />
         default:
             return <Icon.Alt style={iconStyle} />
     }
@@ -63,14 +69,25 @@ export default class SideNavBar extends Component {
     }
 
     public render() {
-        const width :string = this.state.isVisible? "16rem" : "4rem";
+        const width :string = this.state.isVisible? "17rem" : "3.7rem";
         return (
             <div className="l-navbar" style={{ width: width }}>
                 <nav className="nav">
                     <div>
-                        <a href="#" className="nav_logo" onClick={this.handleSideNavBar}> 
-                            <span className="nav_logo-name">Sayan Bhattacharyya</span>
-                        </a>
+                        <div className="nav_logo" onClick={this.handleSideNavBar}> 
+                            {
+                                !this.state.isVisible ?
+                                <>
+                                    { getIcon(-1) }
+                                </>
+                                :<>
+                                    { getIcon(0) }
+                                </>
+                            }
+                            <span className="nav_logo-name">
+                                    Sayan Bhattacharyya
+                            </span>
+                        </div>
                         <hr/>
                         <div className="nav_list">
                             {
@@ -81,14 +98,10 @@ export default class SideNavBar extends Component {
                                             <>
                                                 {
                                                     getIcon( navElement.image )
-                                                }{
-                                                    this.state.isVisible ?
-                                                    <span className={ "nav_name" }>
-                                                            {navElement.title}
-                                                    </span>
-                                                    :""
-              
                                                 }
+                                                <span className={ "nav_name" }>
+                                                        {navElement.title}
+                                                </span>
                                             </>
                                         }
                                         </Link>
