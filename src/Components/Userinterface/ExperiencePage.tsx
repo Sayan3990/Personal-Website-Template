@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import { Container } from 'react-bootstrap';
 
-import SideNavBar from '../Functions/SideNavBar';
-import UpperNavBar from '../Functions/UpperNavBar';
-
 interface IState {
     isVisible: boolean
 }
@@ -17,10 +14,8 @@ export default class ExperiencePage extends Component {
 
     public render() {
         return (<>
-                <UpperNavBar />
-                <SideNavBar />
                 <Container>
-                    <h1>Experience</h1>
+                    <h1 id="main-banner-h1">Experience</h1>
                 </Container>
             </>
         )

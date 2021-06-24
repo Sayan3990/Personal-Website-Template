@@ -1,64 +1,58 @@
-import * as routes from '../Constants/routes';
-
 export const navList = [
     {
         title: "Personal Information",
-        image: 1,
-        link: routes.PERSONAL_INFO
+        image: 1
     },
     {
         title: "Academics",
-        image: 2,
-        link: routes.ACADEMICS
+        image: 2
     },
     {
         title: "Achievements",
-        image: 3,
-        link: routes.ACHIEVEMENTS
+        image: 3
     },
     {
         title: "Experience",
-        image: 4,
-        link: routes.EXPERIENCES
+        image: 4
     },
     {
         title: "Computer Science",
-        image: 5,
-        link: routes.CSE
+        image: 5
     },
     {
         title: "Github",
-        image: 6,
-        link: routes.GITHUB
+        image: 6
     },
     {
         title: "Web Development",
-        image: 7,
-        link: routes.WEB_DEV
+        image: 7
     },
     {
         title: "Competitive Programming",
-        image: 8,
-        link: routes.CP
+        image: 8
     },
     {
         title: "Artificial Intelligence",
-        image: 9,
-        link: routes.AI
+        image: 9
     },
     {
         title: "Social Media",
-        image: 10,
-        link: routes.SOCIAL_MEDIA
+        image: 10
     },
     {
         title: "Hobbies",
-        image: 11,
-        link: routes.HOBBIES
+        image: 11
+    },
+    {
+        title: "Contact",
+        image: 12
+    },
+    {
+        title: "Hire me",
+        image: 13
     },
     {
         title: "Feedback",
-        image: 12,
-        link: routes.FEEDBACK
+        image: 14
     }
 ];

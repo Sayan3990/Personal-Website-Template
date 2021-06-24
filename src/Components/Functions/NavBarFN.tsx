@@ -1,5 +1,24 @@
 import * as Icon from 'react-bootstrap-icons';
 
+
+// Pages
+import AcademicsPage from '../Userinterface/AcademicsPage';
+import AchievementsPage from '../Userinterface/AchievementsPage';
+import AIPage from '../Userinterface/AIPage';
+import ContactPage from '../Userinterface/Contact';
+import CPPage from '../Userinterface/CPPage';
+import ExperiencePage from '../Userinterface/ExperiencePage';
+import FeedbackPage from '../Userinterface/FeedbackPage';
+import GithubPage from '../Userinterface/GithubPage';
+import HirePage from '../Userinterface/Hireme';
+import HobbiesPage from '../Userinterface/HobbiesPage';
+import LandingPage from '../Userinterface/Landing';
+import PersonalPage from '../Userinterface/PersonalPage';
+import SocialPage from '../Userinterface/SocialPage';
+import CSEPage from '../Userinterface/CSEPage';
+import WebDevPage from '../Userinterface/WebDevPage';
+
+
 const iconStyle = { color: "white",
         transform: "scale(140%) translateY(6%)",
         margin: "auto 1rem auto 0.3rem"
@@ -43,8 +62,50 @@ export function getIcon(id: number) {
         case 11:
             return <Icon.Stars style={iconStyle} />
         case 12:
+            return <Icon.TelephoneFill style={iconStyle} />
+        case 13:
+            return <Icon.Person style={iconStyle} />
+        case 14:
             return <Icon.ChatRightText style={iconStyle} />
         default:
             return <Icon.Alt style={iconStyle} />
     }
 }
+
+export function getSelectedPage(id: number) {
+    switch(id){
+        case 0:
+            return <LandingPage />
+        case 1:
+            return <PersonalPage />
+        case 2:
+            return <AcademicsPage />
+        case 3:
+            return <AchievementsPage />
+        case 4:
+            return <ExperiencePage />
+        case 5:
+            return <CSEPage />
+        case 6:
+            return <GithubPage />
+        case 7:
+            return <WebDevPage />
+        case 8:
+            return <CPPage />
+        case 9:
+            return  <AIPage />
+        case 10:
+            return <SocialPage />
+        case 11:
+            return <HobbiesPage />
+        case 12:
+            return <ContactPage />
+        case 13:
+            return <HirePage />
+        case 14:
+            return <FeedbackPage />
+        default:
+            return <LandingPage />
+    }
+}
+

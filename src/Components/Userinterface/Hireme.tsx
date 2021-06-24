@@ -6,7 +6,7 @@ interface IState {
     isVisible: boolean
 }
 
-export default class AchievementsPage extends Component {
+export default class HirePage extends Component {
  
     state: IState = {
         isVisible: false
@@ -15,7 +15,7 @@ export default class AchievementsPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    <h1 id="main-banner-h1">Achievements</h1>
+                    <h1 id="main-banner-h1">Hire me</h1>
                 </Container>
             </>
         )

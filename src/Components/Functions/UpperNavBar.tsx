@@ -1,24 +1,14 @@
 import React, { Component } from 'react';
-
-// React Routing
-import { Link } from "react-router-dom";
-import * as routes from '../../Constants/routes';
-
 import { navList } from '../../shared/SideBarInfo';
 import { getIcon } from './NavBarFN';
-
-interface ActiveSideNavBarElement {
-    ElementId: string
-}
 
 interface IState {
     isVisible: boolean
 }
 
-
 export default class UpperNavBar extends Component {
 
-    constructor( props: ActiveSideNavBarElement ) {
+    constructor(props: {}) {
         super(props);
         this.handleUpperNavBar = this.handleUpperNavBar.bind(this);
     }
@@ -41,27 +31,28 @@ export default class UpperNavBar extends Component {
                             <div className="u-nav_logo-icon" onClick={this.handleUpperNavBar}> 
                                 { getIcon(-2) }
                             </div>
-                            <Link to={routes.LANDING} className="u-nav_logo-name">
+                            {/* <Link to={routes.LANDING} className="u-nav_logo-name">
                                     Sayan Bhattacharyya
-                            </Link>
+                            </Link> */}
                         </div>
                         <hr/>
                         <div className="u-nav_list">
                             {
                                 navList.map(( navElement, index ) => {
                                     return (
-                                        <Link to={navElement.link} className="u-nav_link" key={index}>
-                                        {
-                                            <>
-                                                {
-                                                    getIcon( navElement.image )
-                                                }
-                                                <span className={ "u-nav_name" }>
-                                                        {navElement.title}
-                                                </span>
-                                            </>
-                                        }
-                                        </Link>
+                                        // <Link to={navElement.link} className="u-nav_link" key={index}>
+                                        // {
+                                        //     <>
+                                        //         {
+                                        //             getIcon( navElement.image )
+                                        //         }
+                                        //         <span className={ "u-nav_name" }>
+                                        //                 {navElement.title}
+                                        //         </span>
+                                        //     </>
+                                        // }
+                                        // </Link>
+                                        <h1>Hello</h1>
                                     )                                  
                                 })
 
