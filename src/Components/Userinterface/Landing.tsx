@@ -10,10 +10,7 @@ export default class LandingPage extends Component {
                 <Container>
                 <h1 id="main-banner-h1">Welcome!</h1>
                     <p>
-                    Personal Website UI Template using React-TypeScript Class components
-                    Personal website can be about anything you want, including hobbies, pets, or information like academics, achievements, work Experiences.
-                    <br />
-                    It can be a family website that shares your adventures with loved ones along with an area for comments and discussion.
+                    Personal Website UI Template using React-TypeScript Class components. Personal website can be about anything you want, including hobbies, pets, or information like academics, achievements, work Experiences. It can be a family website that shares your adventures with loved ones along with an area for comments and discussion.
                     </p>
                     <br />
                     <h3>Quick Start</h3>

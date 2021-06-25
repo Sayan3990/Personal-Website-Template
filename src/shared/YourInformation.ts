@@ -2,7 +2,7 @@
 
 // Write Basic Information
 export const basicinfo = {
-    yourName: "Sayan Bhattacharyya",
+    yourName: "Your Name",
     email: "user@gmail.com",
     phone: "+919876543210",
     website: "https://your-name.me/"

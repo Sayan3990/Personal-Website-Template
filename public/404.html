@@ -4,121 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="./Components/style.css">
+    <meta
+    name="description"
+    content="Personal Website Template Using React TypeScript By Sayan Bhattacharyya"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
     <title>404 Error</title>
   </head>
-  <!-- Basic 404 Page integrated with your personal website your can style it by yourself -->
   <body>
     <div>
         <div class="mainbox">
-            <div class="msg404">
-                <div class="err">4</div>
-                <i class="fas fa-question-circle"></i>
-                <div class="err2">4</div>
+            <div class="err">
+                <h1>4</h1>
+                <img id="fas" src="./assets/question-circle-solid.svg" alt="?">
+                <h1>4</h1>
             </div>
             <div class="msg">
-                <p id="page-not-found-message" >
-                    Maybe this page moved? Got deleted? Or unavailable?
-                    <br/>Let's go to <a href="https://personal-website-template-by-sayan.netlify.app/">home</a> and try from there.
-                    <!-- Provide your Website Link here -->
-                </p>
-          </div>
+                Maybe this page moved? Got deleted?
+                <br> 
+                Never existed in the first place?
+                <br>
+                Let's go <a href="https://personal-website-template-by-sayan.netlify.app/">home</a> and try from there.</div>
+            </div>
         <div>
     <style>
-
-    body {
-        background-color: #0099ff;;
-    }
-
-    .mainbox {
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        width: 50%;
-        height: 100%;
-    }
-
-    .err {
-      color: black;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 20%;
-      top: 8%;
-    }
-  
-    .fas{
-        color: aliceblue;
-        position: absolute;
-        font-size: 8.5rem;
-        left: 42%;
-        top: 12%;
-        color: black;
-    }
-  
-    .err2 {
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 68%;
-      top: 8%;
-    }
-  
-    .msg {
-        text-align: center;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 1.3rem;
-        position:absolute;
-        top: 45%;
-        width: 100%;
-    }
-
-    #page-not-found-message { 
-        margin: 30px;
-        font-size: 20px;
-        color: aliceblue
-    }
-
-    
-    a {
-        text-decoration: none;
-        color:burlywood;
-    }
-    
-    a:hover {
-      color: blue;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 900px) {
-        
-        .err {
-            font-size: 8rem;
-            left: 15%;
-        }
-
-        .fas {
-            font-size: 5rem;
-            left: 38%;
-            top: 13%;
-        }
-
-        .err2 {
-            left: 60%;
-            font-size: 8rem;
+        body {
+            background-color:aliceblue;
         }
         .mainbox {
-            width: 100%;
-            height: 100%;
+            position: relative;
+            margin: 4rem auto;
+            width: 50%;
         }
-        #page-not-found-message { 
-            font-size: 18px;
+        .err {
+            margin: 0 auto;
+            color: black;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+        .err h1 {
+            margin: 0 1rem;
+            font-size: 10rem;
+        }
+        #fas {
+            margin: auto 0.8rem;
+            height: 8rem;
+            animation: spin 3s linear 0s infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(-360deg);
+            }
         }
         .msg {
-            top: 30%;
+            margin: 2rem auto;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 1.6rem;
+            width: 100%;
         }
-    }
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color:crimson;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .mainbox {
+                margin: 10rem auto;
+                width: 90%;
+            }
+            .err h1 {
+                margin: 0.4rem;
+                font-size: 6rem;
+            }
+            #fas {
+                margin: auto 0.6rem;
+                height: 5rem;
+            }
+            .msg, a {
+                margin: 3rem 0;
+                font-size: 1.1rem;
+            }
+        }
     </style>
   </body>
