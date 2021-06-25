@@ -21,11 +21,13 @@
 
 ## Quick Start
 #### Do you Want to use this template quickly? - follow the steps
-- First you have to download this repo in your local directory
+- First you have to download this repo in your local directory or refer [installation](https://github.com/Sayan3990/Personal-Website-Template#readme) section
 - If you wanted to edit this template with your information quickly
 - Go to `/src/shared` folder and open `YourInformation.ts` file
 - Here you can add or edit your information, which will automatically reflected to the website
-- I have given a basic format to start, you can add more sections, texts and icons
+- A basic format is given with dummy words, you can add more sections, texts and icons
+- Now use command `npm run` in the root directory to see your personal website locally
+- You can deploy your personal website now
 
 ## Available Scripts
 In the project directory, you can run:

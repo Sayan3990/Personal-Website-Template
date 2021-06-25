@@ -21,29 +21,25 @@ export default class LandingPage extends Component {
                     <h5>Do you Want to use this template quickly? - follow the steps</h5>
                     <ul>
                         <li>
-                            <h6>
-                                First you have to download this repo in your local directory
-                            </h6>
+                            First you have to download this repo in your local directory or refer <a href="https://github.com/Sayan3990/Personal-Website-Template#readme" target="_blank"> installation</a> section
                         </li>
                         <li>
-                            <h6>
-                                If you wanted to edit this template with your information quickly
-                            </h6>
+                            If you wanted to edit this template with your information quickly
                         </li>
                         <li>
-                            <h6>
-                                Go to '/src/shared' folder and open 'YourInformation.ts' file
-                            </h6>
+                            Go to <code>'/src/shared'</code> folder and open <code>'YourInformation.ts'</code> file 
                         </li>
                         <li>
-                            <h6>
-                                Here you can add or edit your information, which will automatically reflected to the website
-                            </h6>
+                            Here you can add or edit your information, which will automatically reflected to the website
                         </li>
                         <li>
-                            <h6>
-                                I have given a basic format to start, you can add more sections, texts and icons
-                            </h6>
+                            A basic format is given with dummy words, you can add more sections, texts and icons                   
+                        </li>
+                        <li>                    
+                            Use command <code>`npm run`</code> in the root directory to see your personal website locally              
+                        </li>
+                        <li>              
+                             Now, You can deploy your personal website               
                         </li>
                     </ul>
                 </Container>

@@ -201,7 +201,7 @@ body {
     text-align: left;
 }
 
-p, th, td, a, h6, h5 {
+p, th, td, a, h5, li {
     font-size: 1.2rem;
 }
 
