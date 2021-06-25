@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 // style sheets App.css
 import './App.css';
-
-// Importing React Bootstrap Components
-import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Our NavBarFN Functions
 import { getIcon, getSelectedPage } from './Components/Functions/NavBarFN';
@@ -12,8 +10,11 @@ import { getIcon, getSelectedPage } from './Components/Functions/NavBarFN';
 // Importing our navList
 import { navList } from './shared/SideBarInfo';
 
+// Go to '/src/shared/YourInformation.ts' file to edit information 
+import { basicinfo } from './shared/YourInformation';
+
 // Write your name here
-const yourName = 'Your Name';
+const yourName = basicinfo.yourName;
 
 // Interface for App state variables
 interface INITIAL_STATE {
@@ -35,7 +36,7 @@ class App extends Component {
 
   // Initializing state
   state: INITIAL_STATE = {
-    selectedElement: 0,
+    selectedElement: -1,
     isSideNavBarVisible: true,
     isUpperNavBarVisible: false
   }
@@ -169,12 +170,15 @@ class App extends Component {
             </nav>
           </div>
           {/* Rendering Selected Page */}
-          <Container className="main-container" 
+          <div className="main-container" 
             style={{ left: width, width: "calc(90% - " + width + ")" }}>
             {
               getSelectedPage(this.state.selectedElement)
             }
-          </Container>
+          </div>
+          <br />
+          <br />
+          <hr />
         </>
       )
   }

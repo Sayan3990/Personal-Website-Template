@@ -14,12 +14,11 @@ import SocialPage from '../Userinterface/SocialPage';
 // Icon Style
 const iconStyle = { 
     color: "white",
-    transform: "scale(140%) translateY(6%)",
+    transform: "scale(150%) translateY(-10%)",
     margin: "auto 1rem auto 0.3rem"
 };
 
 // getIcon Functions - returns Icon according to index number
-
 export function getIcon(id: number) {
     switch(id){
         case -2:
@@ -46,7 +45,6 @@ export function getIcon(id: number) {
 }
 
 // getSelectedPage Function - returns corresponding Page according to index number
-
 export function getSelectedPage(id: number) {
     switch(id){
         case 0:

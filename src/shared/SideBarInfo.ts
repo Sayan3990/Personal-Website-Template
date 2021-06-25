@@ -14,10 +14,10 @@ export const navList = [
         title: "Achievements",
     },
     {
-        title: "Experience",
+        title: "Work Experience",
     },
     {
-        title: "Social Medias",
+        title: "Social Media",
     },
     {
         title: "Hobbies",

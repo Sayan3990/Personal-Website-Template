@@ -1,7 +1,8 @@
 # Personal Website Template
 
 - Personal Website UI Template using React-TypeScript Class components
-
+- Personal website can be about anything you want, including hobbies, pets, or information like academics, achievements, work Experiences.
+- It can be a family website that shares your adventures with loved ones along with an area for comments and discussion.
 ## Installation
 - Download or clone the repository into your local directory from [Here](https://github.com/Sayan3990/Personal-Website-Template)
 - Make sure that you have node installed in your computer or [Install Node](https://nodejs.org/en/)
@@ -17,6 +18,14 @@
 
 ## Deployment
 - [Visit deployed site](https://personal-website-template-by-sayan.netlify.app/)
+
+## Quick Start
+#### Do you Want to use this template quickly? - follow the steps
+- First you have to download this repo in your local directory.
+- If you wanted to edit this template with your information quickly.
+- Go to '/src/shared' folder and open 'YourInformation.ts'
+- Here you can add or edit your information, which will automatically reflected to the website
+- I have given a basic format to start, you can add more sections, texts and icons
 
 ## Available Scripts
 In the project directory, you can run:

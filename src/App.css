@@ -86,7 +86,7 @@ body {
 }
 
 .nav_logo-icon {
-    transform: translateY(10%);
+    transform: translateY(0%);
 }
 
 .nav_logo-name, .u-nav_logo-name {
@@ -126,8 +126,7 @@ body {
 }
 
 .u-nav_logo-icon {
-    padding: 0.3rem 0;
-    transform: translateX(-40%);
+    transform: translateX(-40%) translateY(10%);
     text-align: left;
 }
 
@@ -152,11 +151,17 @@ body {
     left: 3.7rem;
     z-index: 10;
     left: 0;
+    top: 0;
     width: 90%;
     margin: 0 5%;
     transition-duration: 0.5s;
 }
 /* Personal Information Page */
+#main-banner-h1 {
+    position: relative;
+    top: 0;
+    padding: 3rem 0 2rem 0 ;
+}
 
 .profile-logo {
     left: 0;
@@ -182,16 +187,27 @@ body {
 }
 
 .profile-info {
+    text-align: left;
+}
+
+#profile-info-text {
+    margin: 1rem 0;
+    text-indent: 40px;
+}
+
+.info {
     margin: 2rem 0;
     width: 100%;
     text-align: left;
 }
 
-#profile-info-text {
-    text-indent: 4rem;
-    font-size: 1rem;
+p, th, td, a, h6, h5 {
+    font-size: 1.2rem;
 }
 
+p {
+    text-indent: 4rem;
+}
 /* Mobile View */
 @media (max-width: 900px) {
     .l-navbar {
