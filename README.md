@@ -3,7 +3,7 @@
 ## Installation
 - Download or clone the repository into your local directory from [Here](https://github.com/Sayan3990/Personal-Website-Template)
 - Make sure that you have node installed in your computer or [Install Node](https://nodejs.org/en/)
-- Inside the local directory here you have downloaded this repo, open your terminal
+- Inside the local directory here you have downloaded this repository, open your terminal
 - Run this command to download all dependencies for this project
   - 
   ```sh 
@@ -15,35 +15,36 @@
   npm install
   ```
 - Now we can run this site locally 
-- To see the site in your localhost run this command in your terminal
+- To host the site in your localhost run this command in your terminal
   - 
   ```sh 
   npm start
+  ```
+
+## Deployement
+- [See deployed site]()
 
 ## Available Scripts
-
 In the project directory, you can run:
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-### `npm test`
 
+#### `npm test`
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
-
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -56,20 +57,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### Learn More
-
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Deployement
-- [See deployed site]()
 
 ## License
 - Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-- [Send mail](mailto:sayan.bhatta2017@gmail.com)
-
 
 ### Hope this will be helpful for your next project
 #### Thank you for visiting
