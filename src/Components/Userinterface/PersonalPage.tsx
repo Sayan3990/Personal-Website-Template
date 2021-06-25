@@ -15,7 +15,7 @@ export default class PersonalPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    {/* <h1 id="main-banner-h1">Personal Information</h1> */}
+                    <h1 id="main-banner-h1">Personal Information</h1>
                 </Container>
             </>
         )

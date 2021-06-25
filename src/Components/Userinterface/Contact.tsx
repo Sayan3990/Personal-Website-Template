@@ -15,7 +15,7 @@ export default class ContactPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    {/* <h1 id="main-banner-h1">Contact</h1> */}
+                    <h1 id="main-banner-h1">Contact</h1>
                 </Container>
             </>
         )

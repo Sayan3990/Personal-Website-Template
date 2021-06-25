@@ -15,7 +15,7 @@ export default class ExperiencePage extends Component {
     public render() {
         return (<>
                 <Container>
-                    {/* <h1 id="main-banner-h1">Experience</h1> */}
+                    <h1 id="main-banner-h1">Experience</h1>
                 </Container>
             </>
         )

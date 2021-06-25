@@ -1,58 +1,43 @@
+// Here your SideNavBar and UpperNarBar Elements are listed
+// Your can add more sections here
+// Don't forget to provide corresponding icons if you have changed navList
+// Pages will be rendered according to their indexes
+
 export const navList = [
     {
         title: "Personal Information",
-        image: 1
     },
     {
         title: "Academics",
-        image: 2
     },
     {
         title: "Achievements",
-        image: 3
     },
     {
         title: "Experience",
-        image: 4
     },
     {
-        title: "Computer Science",
-        image: 5
-    },
-    {
-        title: "Github",
-        image: 6
-    },
-    {
-        title: "Web Development",
-        image: 7
-    },
-    {
-        title: "Competitive Programming",
-        image: 8
-    },
-    {
-        title: "Artificial Intelligence",
-        image: 9
-    },
-    {
-        title: "Social Media",
-        image: 10
+        title: "Social Medias",
     },
     {
         title: "Hobbies",
-        image: 11
     },
     {
         title: "Contact",
-        image: 12
-    },
-    {
-        title: "Hire me",
-        image: 13
-    },
-    {
-        title: "Feedback",
-        image: 14
     }
 ];
+
+// According to this configuration, getSelectedPage Function will return
+
+// default -> LandingPage
+// case 0: -> PersonalPage
+// case 1 -> AcademicsPage
+// case 2 -> AchievementsPage
+// case 3 -> ExperiencePage
+// case 4 -> SocialPage
+// case 5 -> HobbiesPage
+// case 6 -> ContactPage
+
+// As, the pages will be returned according to the corresponding indexes
+// So, maintaining proper index is important here
+// Same for the corresponding icons

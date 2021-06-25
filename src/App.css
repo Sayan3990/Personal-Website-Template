@@ -1,25 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
-  --nav-width: 16rem;
   --first-color-light: #0099ff;
-  --first-color-light-2: #388bff;
-  --first-color: #4723D9;
-  --first-color-dark: #250994;
   --white-color: #F7F6FB;
   --body-font: 'Nunito', sans-serif;
-  --normal-font-size: 1rem;
-  --z-fixed: 100;
 }
 
 .App {
   text-align: center;
-}
-
-*,
-::before,
-::after {
-    box-sizing: border-box
 }
 
 body {
@@ -27,7 +15,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
     transition: 0.5s;
 }
 
@@ -35,15 +22,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: var(--nav-width);
     height: 100vh;
     padding: .5rem 0 2rem;
-    background-image:   linear-gradient( var(--first-color-dark),
-                        var(--first-color),
-                        var(--first-color-light-2)
-                    );
+    background-color: var(--first-color-light);
     transition: .5s;
-    z-index: var(--z-fixed)
 }
 
 .nav, .u-nav  {
@@ -61,8 +43,8 @@ body {
 
 .nav_link, .u-nav_link {
     position: relative;
-    padding: 0.5rem 1rem;
-    height: 2.6rem;
+    padding: 0.2rem 1rem;
+    height: 2rem;
     width: 17rem;
     color: #F7F6FB;
     font-size: 0.97rem;
@@ -121,7 +103,6 @@ body {
     width: 100%;
     height: auto;
     padding: 0.1rem 0.2rem;
-    z-index: calc(var(--z-fixed) + 1);
 }
 
 .u-nav_list {
@@ -160,79 +141,9 @@ body {
 
 .active {
     padding-left: 0.75rem;
-    border-bottom: 1px solid #F7F6FB;
-    border-left: 4px solid #F7F6FB;
-    font-weight: bold;
+    border-left: 3px solid #F7F6FB;
     transition-duration: 0.2s;
     opacity: 1;
-}
-
-.rendered-page-area, .rendered-page-area-900 {
-    position: relative;
-    z-index: 5;
-    visibility: visible;
-    transition-duration: 0.5s;
-    width: 100%;
-}
-
-.rendered-page-area-900 {
-    visibility: hidden;
-}
-
-.main-header-upper, .main-header-upper-900 {
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    height: 0px;
-    width: 100%;
-    background-image:   linear-gradient( to bottom, var(--first-color-dark),
-                        var(--first-color-light-2)
-                    );
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-
-.main-header-background {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-
-.main-header-background-900 {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-
-.main-header-upper-900 {
-    height: 100px;
-    color: var(--white-color);
-    background-image: none;
-    background-color: var(--first-color-light-2);
-}
-
-.container {
-    position: relative;
-    width: 80%;
-    margin: 10rem 10%;
-    width: calc(100% - 3.7rem);
-    z-index: 2;
-}
-
-#main-banner-h1 {
-    position: fixed;
-    z-index: 6;
-    top: 0;
-    margin-left: 3rem;
-    margin-top: 2rem;
-    text-align: left;
-    color: #F7F6FB;
-    visibility: visible;
 }
 
 @media (max-width: 900px) {
@@ -242,16 +153,5 @@ body {
     .u-navbar {
         position: fixed;
         top: 0;
-    }
-    .rendered-page-area {
-        top: -100%;
-        visibility: hidden;
-    }
-    #main-banner-h1 {
-        visibility: hidden;
-    }
-
-    .rendered-page-area-900 {
-        visibility: visible;
     }
 }

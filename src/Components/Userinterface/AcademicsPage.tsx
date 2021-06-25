@@ -15,7 +15,7 @@ export default class AcademicsPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    {/* <h1 id="main-banner-h1">Academics</h1> */}
+                    <h1 id="main-banner-h1">Academics</h1>
                 </Container>
             </>
         )

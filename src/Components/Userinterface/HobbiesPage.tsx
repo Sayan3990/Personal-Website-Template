@@ -15,7 +15,7 @@ export default class HobbiesPage extends Component {
     public render() {
         return (<>
                 <Container>
-                    {/* <h1 id="main-banner-h1">Hobbies</h1> */}
+                    <h1 id="main-banner-h1">Hobbies</h1>
                 </Container>
             </>
         )

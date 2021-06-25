@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 
-// style sheets
+// style sheets App.css
 import './App.css';
 
-// Functions
-import { getIcon, getSelectedPage, getGreeting } from './Components/Functions/NavBarFN';
+// Importing React Bootstrap Components
+import { Container } from 'react-bootstrap';
+
+// Our NavBarFN Functions
+import { getIcon, getSelectedPage } from './Components/Functions/NavBarFN';
+
+// Importing our navList
 import { navList } from './shared/SideBarInfo';
 
-interface IState {
-  header_background_style: {
-    height: string,
-    height2: string,
-    opacity: string
-  }
+// Write your name here
+const yourName = 'Your Name';
+
+// Interface for App state variables
+interface INITIAL_STATE {
   selectedElement: number,
-  isVisible: boolean,
-  isUpperVisible: boolean
+  isSideNavBarVisible: boolean,
+  isUpperNavBarVisible: boolean
 }
 
 class App extends Component {
@@ -23,62 +27,44 @@ class App extends Component {
   constructor( props: {} ) {
       super(props);
       this.handleSideNavBar = this.handleSideNavBar.bind(this);
-      this.handleUpperSideNavBar = this.handleUpperSideNavBar.bind(this);
+      this.handleUpperNavBar = this.handleUpperNavBar.bind(this);
       this.setRenderedPage = this.setRenderedPage.bind(this);
   }
 
-  state: IState = {
-    header_background_style: { height: "0", height2: "100px", opacity: "1" },
+  state: INITIAL_STATE = {
     selectedElement: 0,
-    isVisible: true,
-    isUpperVisible: false
+    isSideNavBarVisible: true,
+    isUpperNavBarVisible: false
   }
 
   setRenderedPage(ElementId: number) {
     this.setState({
-      selectedElement: ElementId,
-      header_background_style: { height: '100vh', opacity: "0" },
+      selectedElement: ElementId
     })
-    setTimeout(() => this.setState(
-      {
-        header_background_style: { height: '0px', opacity: "0" }
-      }
-    ), 500)
-    setTimeout(() => this.setState(
-      {
-        header_background_style: { height: '0px', opacity: "1" }
-      }
-    ), 900)
   }
 
   setRenderedUpperPage(ElementId: number) {
     this.setState({
       selectedElement: ElementId,
-      header_background_style: { height2: '100vh' },
-      isUpperVisible: false
+      isUpperNavBarVisible: false
     })
-    setTimeout(() => this.setState(
-      {
-        header_background_style: { height2: '100px' }
-      }
-    ), 500)
   }
 
   handleSideNavBar() {
       this.setState({ 
-        isVisible: !this.state.isVisible, 
+        isSideNavBarVisible: !this.state.isSideNavBarVisible, 
       })
   }
 
-  handleUpperSideNavBar() {
+  handleUpperNavBar() {
     this.setState({ 
-      isUpperVisible: !this.state.isUpperVisible,
+      isUpperNavBarVisible: !this.state.isUpperNavBarVisible,
     })
   }
 
   public render() {
-      const width :string = this.state.isVisible? "17rem" : "3.7rem";
-      const height :string = this.state.isUpperVisible? "auto" : "2.4rem";
+      const width :string = this.state.isSideNavBarVisible? "17rem" : "3.7rem";
+      const height :string = this.state.isUpperNavBarVisible? "auto" : "2.4rem";
       return (
         <>
           <div className="l-navbar" style={{ width: width }}>
@@ -87,17 +73,17 @@ class App extends Component {
                 <div className="nav_logo" > 
                   <div className="nav_logo-icon" onClick={this.handleSideNavBar}>
                     {
-                        !this.state.isVisible ?
+                        !this.state.isSideNavBarVisible ?
                         <>
-                            { getIcon(-1) }
+                            { getIcon(-2) }
                         </>
                         :<>
-                            { getIcon(0) }
+                            { getIcon(-1) }
                         </>
                     }
                   </div>
                   <span onClick={ () => this.setRenderedPage(0) } className="nav_logo-name">
-                          Sayan Bhattacharyya
+                          {yourName}
                   </span>
                 </div>
                 <hr/>
@@ -106,15 +92,15 @@ class App extends Component {
                     navList.map(( navElement, index ) => {
                       return (
                         <span className={ "nav_link "
-                          + (navElement.image === this.state.selectedElement?
+                          + (index === this.state.selectedElement?
                           "active" : "") }
-                          onClick={ ()=> this.setRenderedPage(navElement.image) }
+                          onClick={ ()=> this.setRenderedPage(index) }
                           key={index}
                         >
                         {
                           <>
                             {
-                                getIcon( navElement.image )
+                                getIcon( index )
                             }
                             <span className="nav_name">
                                     {navElement.title}
@@ -133,11 +119,11 @@ class App extends Component {
             <nav className="u-nav">
               <div>
                 <div className="u-nav_logo"> 
-                  <div className="u-nav_logo-icon" onClick={this.handleUpperSideNavBar}> 
+                  <div className="u-nav_logo-icon" onClick={this.handleUpperNavBar}> 
                     { getIcon(-2) }
                   </div>
                   <span className="u-nav_logo-name">
-                    Sayan Bhattacharyya
+                    {yourName}
                   </span>
                 </div>
                 <hr/>
@@ -145,13 +131,13 @@ class App extends Component {
                   {
                     navList.map(( navElement, index ) => {
                       return (
-                        <span onClick={ () => this.setRenderedUpperPage(navElement.image) }
+                        <span onClick={ () => this.setRenderedUpperPage( index ) }
                           className="u-nav_link" key={index}
                         >
                           {
                             <>
                               {
-                                getIcon( navElement.image )
+                                getIcon( index )
                               }
                               <span className={ "u-nav_name" }>
                                 {navElement.title}
@@ -166,58 +152,11 @@ class App extends Component {
               </div>
             </nav>
           </div>
-          <h1 id="main-banner-h1" style={{ left: width,
-              opacity: this.state.header_background_style.opacity
-          }}>
+          <Container className="main-container">
             {
-              this.state.selectedElement !== 0 ?
-              navList[this.state.selectedElement - 1].title
-              : getGreeting()
-            }
-          </h1>
-          <div className="rendered-page-area" style={{ left: width, width: "calc(100% - " + width + ")" }}>
-            <div className="main-header-upper" style={
-              {
-                height: this.state.header_background_style.height
-              }
-            }>
-            </div>
-            <div className="main-header-background" 
-              style={
-                {
-                  top: this.state.header_background_style.height
-                }
-              }
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
-                <path fill="#388bff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,138.7C384,117,480,75,576,64C672,53,768,75,864,96C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                </path>
-              </svg>
-            </div>
-          </div>
-          <div className="rendered-page-area-900">
-            <div className="main-header-upper-900" style={
-              {
-                height: this.state.header_background_style.height2
-              }
-            }>
-            </div>
-            <div className="main-header-background-900" 
-              style={
-                {
-                  top: this.state.header_background_style.height2
-                }
-              }
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
-                <path fill="#388bff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,138.7C384,117,480,75,576,64C672,53,768,75,864,96C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-                </path>
-              </svg>
-            </div>
-          </div>
-          {
               getSelectedPage(this.state.selectedElement)
-          }
+            }
+          </Container>
         </>
       )
   }
