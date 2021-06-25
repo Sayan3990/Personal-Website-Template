@@ -1,11 +1,28 @@
-# Getting Started with Create React App
+# Personal Website Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+- Download or clone the repository into your local directory from [Here](https://github.com/Sayan3990/Personal-Website-Template)
+- Make sure that you have node installed in your computer or [Install Node](https://nodejs.org/en/)
+- Inside the local directory here you have downloaded this repo, open your terminal
+- Run this command to download all dependencies for this project
+  - 
+  ```sh 
+  npm i 
+  ```
+  or 
+  
+  ```sh 
+  npm install
+  ```
+- Now we can run this site locally 
+- To see the site in your localhost run this command in your terminal
+  - 
+  ```sh 
+  npm start
 
 ## Available Scripts
 
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -13,7 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -39,8 +55,21 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Deployement
+- [See deployed site]()
+
+## License
+- Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+- [Send mail](mailto:sayan.bhatta2017@gmail.com)
+
+
+### Hope this will be helpful for your next project
+#### Thank you for visiting
