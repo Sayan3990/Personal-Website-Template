@@ -1,5 +1,7 @@
 # Personal Website Template
 
+- Personal Website UI Template using React-TypeScript Class components
+
 ## Installation
 - Download or clone the repository into your local directory from [Here](https://github.com/Sayan3990/Personal-Website-Template)
 - Make sure that you have node installed in your computer or [Install Node](https://nodejs.org/en/)

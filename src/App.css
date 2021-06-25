@@ -20,6 +20,7 @@ body {
 
 .l-navbar, .u-navbar {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     height: 100vh;
@@ -146,6 +147,16 @@ body {
     opacity: 1;
 }
 
+.main-container {
+    position: relative;
+    left: 3.7rem;
+    z-index: 10;
+    left: 0;
+    width: 90%;
+    margin: 0 5%;
+    transition-duration: 0.5s;
+}
+
 @media (max-width: 900px) {
     .l-navbar {
         left: -17rem; 
@@ -153,5 +164,10 @@ body {
     .u-navbar {
         position: fixed;
         top: 0;
+    }
+    .main-container {
+        top: 2rem;
+        left: 0rem;
+        width: 100%;
     }
 }
