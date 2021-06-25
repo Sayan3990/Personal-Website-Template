@@ -22,17 +22,17 @@ export default class LandingPage extends Component {
                     <ul>
                         <li>
                             <h6>
-                                First you have to download this repo in your local directory.
+                                First you have to download this repo in your local directory
                             </h6>
                         </li>
                         <li>
                             <h6>
-                                If you wanted to edit this template with your information quickly.
+                                If you wanted to edit this template with your information quickly
                             </h6>
                         </li>
                         <li>
                             <h6>
-                                Go to '/src/shared' folder and open 'YourInformation.ts'
+                                Go to '/src/shared' folder and open 'YourInformation.ts' file
                             </h6>
                         </li>
                         <li>

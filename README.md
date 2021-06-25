@@ -21,9 +21,9 @@
 
 ## Quick Start
 #### Do you Want to use this template quickly? - follow the steps
-- First you have to download this repo in your local directory.
-- If you wanted to edit this template with your information quickly.
-- Go to '/src/shared' folder and open 'YourInformation.ts'
+- First you have to download this repo in your local directory
+- If you wanted to edit this template with your information quickly
+- Go to `/src/shared` folder and open `YourInformation.ts` file
 - Here you can add or edit your information, which will automatically reflected to the website
 - I have given a basic format to start, you can add more sections, texts and icons
 
