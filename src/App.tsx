@@ -35,7 +35,7 @@ class App extends Component {
 
   // Initializing state
   state: INITIAL_STATE = {
-    selectedElement: -1,
+    selectedElement: 0,
     isSideNavBarVisible: true,
     isUpperNavBarVisible: false
   }

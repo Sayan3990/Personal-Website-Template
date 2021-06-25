@@ -156,6 +156,42 @@ body {
     margin: 0 5%;
     transition-duration: 0.5s;
 }
+/* Personal Information Page */
+
+.profile-logo {
+    left: 0;
+    height: 200px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#profile-photo {
+    border-radius: 50%;
+    height: 160px;
+    width: 160px
+}
+
+#profile-name {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.profile-info {
+    margin: 2rem 0;
+    width: 100%;
+    text-align: left;
+}
+
+#profile-info-text {
+    text-indent: 4rem;
+    font-size: 1rem;
+}
+
 /* Mobile View */
 @media (max-width: 900px) {
     .l-navbar {
@@ -169,5 +205,11 @@ body {
         top: 2rem;
         left: 0rem;
         width: 100%;
+    }
+    .profile-logo {
+        margin: 0 auto;
+        height: 200px;
+        width: 160px;
+        display: flex;
     }
 }
