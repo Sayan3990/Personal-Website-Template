@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-
+/* Css Variables */
 :root {
   --first-color-light: #0099ff;
   --white-color: #F7F6FB;
   --body-font: 'Nunito', sans-serif;
 }
-
+/* App Styling */
 .App {
   text-align: center;
 }
-
+/* Body Styling */
 body {
     position: relative;
     margin: 0;
@@ -17,7 +17,7 @@ body {
     font-family: var(--body-font);
     transition: 0.5s;
 }
-
+/* NavBar Styling */
 .l-navbar, .u-navbar {
     position: fixed;
     z-index: 100;
@@ -146,7 +146,7 @@ body {
     transition-duration: 0.2s;
     opacity: 1;
 }
-
+/* Renders Page Container */
 .main-container {
     position: relative;
     left: 3.7rem;
@@ -156,7 +156,7 @@ body {
     margin: 0 5%;
     transition-duration: 0.5s;
 }
-
+/* Mobile View */
 @media (max-width: 900px) {
     .l-navbar {
         left: -17rem; 

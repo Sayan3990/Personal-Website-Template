@@ -22,6 +22,7 @@ interface INITIAL_STATE {
   isUpperNavBarVisible: boolean
 }
 
+// App Class Components
 class App extends Component {
 
   constructor( props: {} ) {
@@ -34,7 +35,7 @@ class App extends Component {
 
   // Initializing state
   state: INITIAL_STATE = {
-    selectedElement: 0,
+    selectedElement: -1,
     isSideNavBarVisible: true,
     isUpperNavBarVisible: false
   }
