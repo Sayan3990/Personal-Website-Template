@@ -21,6 +21,7 @@ interface INITIAL_STATE {
   selectedElement: number,
   isSideNavBarVisible: boolean,
   isUpperNavBarVisible: boolean
+  mode: boolean
 }
 
 // App Class Components
@@ -32,13 +33,16 @@ class App extends Component {
       this.handleSideNavBar = this.handleSideNavBar.bind(this);
       this.handleUpperNavBar = this.handleUpperNavBar.bind(this);
       this.setRenderedPage = this.setRenderedPage.bind(this);
+      this.updateWidthAndHeight = this.updateWidthAndHeight.bind(this);
+      window.addEventListener('resize', this.updateWidthAndHeight);
   }
 
   // Initializing state
   state: INITIAL_STATE = {
     selectedElement: -1,
     isSideNavBarVisible: true,
-    isUpperNavBarVisible: false
+    isUpperNavBarVisible: false,
+    mode: !(window.innerWidth <= 900)
   }
 
   // set rendered page id according to index for Side Nav Bar
@@ -68,6 +72,15 @@ class App extends Component {
     this.setState({ 
       isUpperNavBarVisible: !this.state.isUpperNavBarVisible,
     })
+  }
+
+  // Getting Window Width
+  updateWidthAndHeight() {
+    if (window.innerWidth <= 900) {
+      this.setState({ mode: false })
+    } else {
+      this.setState({ mode: true })
+    }
   }
 
   // Render function
@@ -178,15 +191,22 @@ class App extends Component {
             </nav>
           </div>
           {/* Rendering Selected Page */}
-          <div className="main-container" 
-            style={{ left: width, width: "calc(90% - " + width + ")" }}>
-            {
-              getSelectedPage(this.state.selectedElement)
-            }
-          </div>
-          <br />
-          <br />
-          <hr />
+          {
+            this.state.mode?
+            <div className="main-container" 
+              style={{ left: width, width: "calc(100% - " + width + ")" }}>
+              {
+                getSelectedPage(this.state.selectedElement)
+              }
+            </div>
+            :
+            <div className="main-container-2" 
+              style={{ left: "0", width: "100%" }}>
+              {
+                getSelectedPage(this.state.selectedElement)
+              }
+            </div>
+          }
         </>
       )
   }

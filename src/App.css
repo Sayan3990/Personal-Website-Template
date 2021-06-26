@@ -147,15 +147,24 @@ body {
     opacity: 1;
 }
 /* Renders Page Container */
-.main-container {
+.main-container, .main-container-2  {
     position: relative;
-    left: 3.7rem;
+    padding: 0;
     z-index: 10;
     left: 0;
     top: 0;
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0;
     transition-duration: 0.5s;
+}
+
+.main-container-2 {
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+.container {
+    width: 100%;
 }
 /* Personal Information Page */
 #main-banner-h1 {
@@ -228,5 +237,8 @@ p {
         height: 200px;
         width: 160px;
         display: flex;
+    }
+    .container-foot {
+        margin-top: 5rem;
     }
 }
