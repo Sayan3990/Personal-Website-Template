@@ -21,6 +21,8 @@ const iconStyle = {
 // getIcon Functions - returns Icon according to index number
 export function getIcon(id: number) {
     switch(id){
+        case -4:
+            return <Icon.X style={iconStyle} />
         case -3:
             return <Icon.Justify style={iconStyle} />
         case -2:

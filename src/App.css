@@ -104,11 +104,12 @@ body {
     width: 100%;
     height: auto;
     padding: 0.1rem 0.2rem;
+    transition-duration: 0.5s;
 }
 
 .u-nav_list {
     padding: 0.3rem 0;
-    transition-delay: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .u-nav_link {
@@ -121,12 +122,13 @@ body {
 }
 
 .u-nav_logo {
-    height: 2rem;
+    height: 2.2rem;
     width: 100%;
 }
 
 .u-nav_logo-icon {
-    transform: translateX(-30%) translateY(10%);
+    transition-duration: 0.5s;
+    transform: translateX(-30%) translateY(15%) scale(120%, 120%);
     text-align: left;
 }
 
@@ -134,8 +136,7 @@ body {
     width: 100%;
     margin: auto;
     padding: auto;
-    padding-top: 0.15rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 

@@ -136,7 +136,15 @@ class App extends Component {
               <div>
                 <div className="u-nav_logo"> 
                   <div className="u-nav_logo-icon" onClick={this.handleUpperNavBar}> 
-                    { getIcon(-3) }
+                    {
+                      !this.state.isUpperNavBarVisible ?
+                      <>
+                          { getIcon(-3) }
+                      </>
+                      :<>
+                          { getIcon(-4) }
+                      </>
+                    }
                   </div>
                   <span onClick={ () => this.setRenderedUpperPage(-1) } className="u-nav_logo-name">
                     {yourName}
