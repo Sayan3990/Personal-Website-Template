@@ -121,12 +121,12 @@ body {
 }
 
 .u-nav_logo {
-    height: 1.7rem;
+    height: 2rem;
     width: 100%;
 }
 
 .u-nav_logo-icon {
-    transform: translateX(-40%) translateY(10%);
+    transform: translateX(-30%) translateY(10%);
     text-align: left;
 }
 

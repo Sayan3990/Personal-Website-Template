@@ -136,7 +136,7 @@ class App extends Component {
               <div>
                 <div className="u-nav_logo"> 
                   <div className="u-nav_logo-icon" onClick={this.handleUpperNavBar}> 
-                    { getIcon(-2) }
+                    { getIcon(-3) }
                   </div>
                   <span onClick={ () => this.setRenderedUpperPage(-1) } className="u-nav_logo-name">
                     {yourName}
@@ -156,7 +156,7 @@ class App extends Component {
                               {
                                 getIcon( index )
                               }
-                              <span className={ "u-nav_name" }>
+                              <span className="u-nav_name">
                                 {navElement.title}
                               </span>
                             </>
