@@ -17,7 +17,7 @@
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Deployment
-- Visit [deployed site](https://personal-website-template-by-sayan.netlify.app/)
+- Visit [Deployed Site](https://personal-website-template-by-sayan.netlify.app/)
 - Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/)
 ## Quick Start
 #### Do you Want to use this template quickly? - follow the steps
