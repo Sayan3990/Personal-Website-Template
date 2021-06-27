@@ -20,11 +20,11 @@
 ## Dependencies
 - `react@17.0.2`
 - `react-dom@17.0.2`
+- `react-scripts@4.0.3`
+- `typescript@4.3.4`
 - `bootstrap@4.6.0`
 - `react-bootstrap@1.6.1`
 - `react-bootstrap-icons@1.5.0`
-- `react-scripts@4.0.3`
-- `typescript@4.3.4`
 
 ## Deployment
 - Visit [Deployed Site](https://personal-website-template-by-sayan.netlify.app/)
