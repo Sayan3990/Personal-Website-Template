@@ -3,6 +3,7 @@
 - Personal Website UI Template using React-TypeScript Class components
 - Personal website can be about anything you want, including hobbies, pets, or information like academics, achievements, work Experiences.
 - It can be a family website that shares your adventures with loved ones along with an area for comments and discussion.
+
 ## Installation
 - Download or clone the repository into your local directory from [Here](https://github.com/Sayan3990/Personal-Website-Template)
 - Make sure that you have node installed in your computer or [Install Node](https://nodejs.org/en/)
@@ -15,6 +16,15 @@
 - To host the site in your localhost run this command in your terminal
   #### ` npm start `
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Dependencies
+- `react@17.0.2`
+- `react-dom@17.0.2`
+- `bootstrap@4.6.0`
+- `react-bootstrap@1.6.1`
+- `react-bootstrap-icons@1.5.0`
+- `react-scripts@4.0.3`
+- `typescript@4.3.4`
 
 ## Deployment
 - Visit [Deployed Site](https://personal-website-template-by-sayan.netlify.app/)
