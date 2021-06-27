@@ -18,7 +18,7 @@
 
 ## Deployment
 - Visit [Deployed Site](https://personal-website-template-by-sayan.netlify.app/)
-- Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/)
+<!-- - Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/) -->
 ## Quick Start
 #### Do you Want to use this template quickly? - follow the steps
 - First you have to download this repo in your local directory or refer [installation](https://github.com/Sayan3990/Personal-Website-Template#readme) section
