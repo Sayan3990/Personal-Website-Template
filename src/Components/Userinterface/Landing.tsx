@@ -13,6 +13,10 @@ export default class LandingPage extends Component {
                     Personal Website UI Template using React-TypeScript Class components. Personal website can be about anything you want, including hobbies, pets, or information like academics, achievements, work Experiences. It can be a family website that shares your adventures with loved ones along with an area for comments and discussion.
                     </p>
                     <br />
+                    <p>
+                    Here, you will be getting this basic template of my personal website. Visit <a href="https://github.com/Sayan3990/Personal-Website-Template" target="_blank" rel="noopener noreferrer">Personal Website Template</a> for more details or see the <a href="https://personal-website-template-by-sayan.netlify.app/" target="_blank" rel="noopener noreferrer">Deployed site</a>. You can also refer quick start section to deploy your personal website. Read <a href="https://github.com/Sayan3990/Personal-Website-Template#readme" target="_blank" rel="noopener noreferrer">README</a> carefully if you are new in react.
+                    </p>
+                    <br />
                     <h3>Dependencies</h3>
                     <ul>
                         <li>
