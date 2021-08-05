@@ -28,7 +28,7 @@
 
 ## Deployment
 - Visit [Deployed Site](https://personal-website-template-by-sayan.netlify.app/)
-- Visit [My Personal Website](https://sayan-bhattacharyya.netlify.app/)
+- Visit [My Personal Website](https://sayanbhattacharyya.me)
 
 ## Quick Start
 #### Do you Want to use this template quickly? - follow the steps
